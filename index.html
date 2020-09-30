@@ -1,29 +1,120 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GitHub API</title>
 
-<head>
-  <meta charset='utf8'>
-  <title></title>
+		<link href="./public/style.css" rel="stylesheet" />
+	</head>
 
-  <link href="./public/style.css" rel="stylesheet" />
+	<body>
+		<header id="main-header">
+			<h1>This is kind of Portfolio</h1>
+			<h1 class="long-hdr">
+				I created this using Github API to help you know more about my
+				activities and works on GitHub
+			</h1>
+		</header>
+		<section id="showcase"></section>
+		<main id="user-interface">
+			<h2 class="sec-hdr">Look at my data on Github</h2>
+			<article id="github-works">
+				<!--  section one my projects  -->
+				<section>
+					<h3>Individual projects</h3>
 
-</head>
+					<nav>
+						<a href="#">project 1</a> <br />
+						<br />
+						<a href="#">project 2</a> <br />
+						<br />
+						<a href="#">project 3</a> <br />
+						<br />
+					</nav>
+				</section>
+				<!--  section two projects  on which I collaborated -->
+				<section>
+					<h3>Projects on which I collaborated</h3>
 
-<body>
+					<nav>
+						<a href="#">project 1</a> <br />
+						<br />
+						<a href="#">project 2</a> <br />
+						<br />
+						<a href="#">project 3</a> <br />
+						<br />
+					</nav>
+				</section>
 
-  <main id='user-interface'>
-    <input id='list-name-input' />
-    <div id='lists'></div>
-  </main>
+				<!--  section three my repos  -->
+				<section>
+					<h3>Repositories</h3>
 
+					<nav>
+						<a href="#">Repo 1</a> <br />
+						<br />
+						<a href="#">Repo 2</a> <br />
+						<br />
+						<a href="#">Repo 3</a> <br />
+						<br />
+					</nav>
+				</section>
+				<!--  section four my issues  -->
+				<section>
+					<h3>Issues</h3>
+					<nav>
+						<a href="#">Issue 1</a> <br />
+						<br />
+						<a href="#">Issue 2</a> <br />
+						<br />
+						<a href="#">Issue 3</a> <br />
+						<br />
+					</nav>
+				</section>
+			</article>
+			<section id="text-anim">
+				<h2 id="fill-auto"></h2>
+			</section>
+		</main>
 
-  <!-- load the frontend testing & reviewing dependencies -->
-  <script src='./lib/review-buttons.js' type='module'></script>
-  <script src='./lib/gremlins.js'></script>
+		<footer>
+			<div>
+				<section>
+					<h3 id="find-me">Find me</h3>
+					<div id="where">
+						<a href="https:/Sayed94h.github.io" target="_blank">Github</a>
+						<br />
+						<br />
+						<a
+							href="https://www.linkedin.com/in/sayed-kazimi-0507"
+							target="_blank"
+							>LinkedIn</a
+						>
+					</div>
+				</section>
+				<section>
+					<h3 id="contacts">Contacts</h3>
+					<div id="via">
+						<p><span class="big-text">Email:</span> example@developer.com</p>
+						<p><span class="big-text">Phone:</span> 11111010</p>
+						<p>
+							<span class="big-text">Address:</span> example street 0, 1000
+							Brussels
+						</p>
+					</div>
+				</section>
+			</div>
 
-  <!-- load your app -->
-  <script type='module' src='./src/init.js'></script>
+			<p class="last-p">&copy; Sayed Kazimi | 2020</p>
+		</footer>
 
-</body>
+		<!-- load the frontend testing & reviewing dependencies -->
+		<script src="./lib/review-buttons.js" type="module"></script>
+		<script src="./lib/gremlins.js"></script>
 
+		<!-- load your app -->
+		<script type="module" src="./src/init.js"></script>
+		<script src="./src/animate-text.js"></script>
+	</body>
 </html>
