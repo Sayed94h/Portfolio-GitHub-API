@@ -57,7 +57,7 @@ In this project I am going to practice Fetch, Fetch REST, Promises, ...and anoth
 
 ## 2. Render All Repositories
 
-**As a user I want to see all of the repositories**
+**As a user I want to see all the repositories of this man**
 
 - \_Given [context] when [a specific action is performed] then [a set of consequences should occur]\_\_
 - ...
@@ -65,6 +65,34 @@ In this project I am going to practice Fetch, Fetch REST, Promises, ...and anoth
 ### REPO
 
 - This user story is developed on branch `render-repos`.
+- This branch is merged to `master` branch after completion.
+
+### Task A: HTML
+
+- Added `a tags` with JS
+
+### Task B: CSS
+
+- Added style for this part
+
+### Task C: JavaScript
+
+- Getting repos using fetch
+- Converting the data to JSON file
+- Render the repos's name and url in `a tags`
+
+---
+
+## 2. Render All Issues
+
+**As a user I want to see all the issues of this man**
+
+- \_Given [context] when [a specific action is performed] then [a set of consequences should occur]\_\_
+- ...
+
+### REPO
+
+- This user story is developed on branch `render-issues`.
 - This branch is merged to `master` branch after completion.
 
 ### Task A: HTML

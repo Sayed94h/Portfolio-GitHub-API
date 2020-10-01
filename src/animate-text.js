@@ -2,14 +2,14 @@ let getH2 = document.getElementById("fill-auto");
 
 let color = {
 	ele: {
-		r: 1,
-		g: 2,
-		b: 1,
+		r: 77,
+		g: 137,
+		b: 2,
 	},
 	setEle: function () {
 		this.ele.r = (this.ele.r + Math.random() * 255) % 255;
 		this.ele.g = (this.ele.g + Math.random() * 255) % 255;
-		this.ele.b = (this.ele.b + Math.random() * 255) % 255;
+		this.ele.b = (this.ele.b + Math.random() * 5) % 255;
 	},
 	setBack: function () {
 		this.setEle();
@@ -23,8 +23,9 @@ let arrText = textCont.split("");
 let i = 0;
 function run() {
 	setInterval(function () {
-		getH2.innerHTML += arrText[i];
 		color.setBack();
+		getH2.innerHTML += arrText[i];
+
 		i++;
 		if (i > arrText.length - 1) {
 			i = 0;
