@@ -22,7 +22,7 @@
 			<article id="github-works">
 				<!--  section one my projects  -->
 				<section>
-					<h3>Individual projects</h3>
+					<h3 class="indi-projects">Individual projects</h3>
 
 					<nav>
 						<a href="#">project 1</a> <br />
@@ -35,7 +35,7 @@
 				</section>
 				<!--  section two projects  on which I collaborated -->
 				<section>
-					<h3>Projects on which I collaborated</h3>
+					<h3 class="group-projects">Projects on which I collaborated</h3>
 
 					<nav>
 						<a href="#">project 1</a> <br />
@@ -49,20 +49,13 @@
 
 				<!--  section three my repos  -->
 				<section>
-					<h3>Repositories</h3>
+					<h3 class="repppos">Repositories</h3>
 
-					<nav>
-						<a href="#">Repo 1</a> <br />
-						<br />
-						<a href="#">Repo 2</a> <br />
-						<br />
-						<a href="#">Repo 3</a> <br />
-						<br />
-					</nav>
+					<nav id="link-container"></nav>
 				</section>
 				<!--  section four my issues  -->
 				<section>
-					<h3>Issues</h3>
+					<h3 class="issuess">Issues</h3>
 					<nav>
 						<a href="#">Issue 1</a> <br />
 						<br />
@@ -116,5 +109,6 @@
 		<!-- load your app -->
 		<script type="module" src="./src/init.js"></script>
 		<script src="./src/animate-text.js"></script>
+		<script src="./src/render-repos.js"></script>
 	</body>
 </html>

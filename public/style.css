@@ -41,7 +41,23 @@ article#github-works nav a {
 h2.sec-hdr {
 	text-align: center;
 }
+section h3.repppos {
+	border-bottom: 4px #005 dashed;
+	font-size: 1.6em;
+}
 
+section h3.indi-projects {
+	border-bottom: 4px rgb(85, 0, 74) dashed;
+	font-size: 1.6em;
+}
+section h3.group-projects {
+	border-bottom: 4px rgb(53, 74, 168) solid;
+	font-size: 1.6em;
+}
+section h3.issuess {
+	border-bottom: 4px rgb(11, 173, 19) solid;
+	font-size: 1.6em;
+}
 section#text-anim h2 {
 	text-align: center;
 	padding-top: 3%;
@@ -49,7 +65,11 @@ section#text-anim h2 {
 	font-size: 2em;
 	text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
-
+nav#link-container {
+	text-align: left;
+	height: 300px;
+	overflow-y: scroll;
+}
 section#text-anim {
 	background: url("./clooud.png");
 	background-position: center;
@@ -58,7 +78,9 @@ section#text-anim {
 	width: 100%;
 	height: auto;
 }
-
+/**
+		footer
+*/
 footer {
 	background: #002;
 	color: #fff;
