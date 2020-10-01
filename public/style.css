@@ -65,7 +65,8 @@ section#text-anim h2 {
 	font-size: 2em;
 	text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
-nav#link-container {
+nav#link-container,
+nav#issue-container {
 	text-align: left;
 	height: 300px;
 	overflow-y: scroll;
