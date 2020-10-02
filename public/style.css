@@ -28,7 +28,8 @@ section#showcase {
 
 article#github-works {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto auto;
+	justify-content: space-around;
 	text-align: center;
 }
 
@@ -66,7 +67,8 @@ section#text-anim h2 {
 	text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 nav#link-container,
-nav#issue-container {
+nav#issue-container,
+nav#projects-container {
 	text-align: left;
 	height: 300px;
 	overflow-y: scroll;
@@ -77,7 +79,7 @@ section#text-anim {
 
 	background-size: cover;
 	width: 100%;
-	height: auto;
+	height: 200px;
 }
 /**
 		footer
