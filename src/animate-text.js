@@ -17,7 +17,7 @@ let color = {
 	},
 };
 
-let textCont = "Cloud technology is amazing! \n Yes, Web Developers 😉 ";
+let textCont = "Web Developers make everything accessible from home! ";
 let arrText = textCont.split("");
 
 let i = 0;

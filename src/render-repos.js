@@ -5,6 +5,7 @@ let getData = function (data) {
 };
 
 let renderEachRepo = function (repo) {
+	console.log("repos are:", repo);
 	for (let i = 0; i < repo.length; i++) {
 		let aEl = document.createElement("a");
 		aEl.href = `${repo[i].html_url}`;
