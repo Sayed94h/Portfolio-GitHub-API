@@ -1,0 +1,63 @@
+article.good-projects {
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+	justify-content: space-around;
+}
+
+section.direct-project {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-around;
+	align-items: flex-end;
+	border: 4px solid rgb(245, 229, 13);
+	border-radius: 2em;
+	background-image: url("./images/custom-player.png");
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 300px;
+	height: 300px;
+}
+
+section.two {
+	background-image: url("./images/array-numbers.png");
+}
+section.three {
+	background-image: url("./images/favorite-words.png");
+}
+section.four {
+	background-image: url("./images/todo-class.png");
+}
+section.five {
+	background-image: url("./images/acme.png");
+}
+section.six {
+	background-image: url("./images/apptheme.png");
+}
+section.seven {
+	background-image: url("./images/duckclone.png");
+}
+section.eight {
+	background-image: url("./images/election.png");
+}
+section.nine {
+	background-image: url("./images/todo-object.png");
+}
+section.ten {
+	background-image: url("./images/semantic.png");
+}
+
+section.direct-project h2 {
+	color: #fff;
+	background-color: #000;
+	cursor: pointer;
+	border-radius: 1em;
+	padding: 0.5em;
+}
+
+section.direct-project h2 a {
+	color: #fff;
+	text-decoration: none;
+}

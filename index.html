@@ -9,16 +9,31 @@
 	</head>
 
 	<body>
+		<!--	main header	-->
 		<header id="main-header">
-			<h1>This is kind of Portfolio</h1>
+	
 			<h1 class="long-hdr">
-				I created this using Github API to help you know more about my
-				activities and works on GitHub
+				I am Sayed Kazimi a junior web developer willing to become an expert software developer, 
+				software designer, web application developer and designer. 
+				Happy to see you on this page.
 			</h1>
+			<img src="https://user-images.githubusercontent.com/61209285/92802034-71f99180-f3b6-11ea-8f19-59fab1c284d4.jpg" alt="my profile picture">
 		</header>
+		<div class="feedback-link">
+			<a href="./public/feedback.html">FEEDBACK</a>
+			<a href="./index.html">HOME</a>
+			<a href="">ABOUT</a>
+			<a href="#contacts">CONTACTS</a>
+		</div>
 		<section id="showcase"></section>
 		<main id="user-interface">
-			<h2 class="sec-hdr">Look at my data on Github</h2>
+			<h2 class="sec-hdr">Look at my work on Github</h2>
+			<section class="all-only">
+				<h2 id="show-all">All Works<h2>
+				<h2 class="show-only"><a href="./public/projects.html">Only Projects</a></h2>
+				
+			</section>
+
 			<article id="github-works">
 				<!--  section one my projects  -->
 				<!-- 				<section>
@@ -52,18 +67,6 @@
 					<nav id="issue-container"></nav>
 				</section>
 				<!--	section five is feedback form	-->
-				<section id="feedback-form">
-					<h3 class="repppos">Your feedback is appreciated</h3>
-					<iframe
-						src="https://docs.google.com/forms/d/e/1FAIpQLSdFsQmTnTUlfKNQafQblKJRcFGWnabPUirmXeakEXnCq1Z4RA/viewform?embedded=true"
-						width="500"
-						height="300"
-						frameborder="0"
-						marginheight="0"
-						marginwidth="0"
-						>Loading…</iframe
-					>
-				</section>
 			</article>
 			<section id="text-anim">
 				<h2 id="fill-auto"></h2>
@@ -88,11 +91,10 @@
 				<section>
 					<h3 id="contacts">Contacts</h3>
 					<div id="via">
-						<p><span class="big-text">Email:</span> example@developer.com</p>
-						<p><span class="big-text">Phone:</span> 11111010</p>
+						<p><span class="big-text">Email:</span> ssayed.kazimi@gmail.com</p>
+						<p><span class="big-text">Phone:</span> +32 465 37 89 77</p>
 						<p>
-							<span class="big-text">Address:</span> example street 0, 1000
-							Brussels
+							<span class="big-text">Address:</span> Gontrodestraat 135, 9050 Gentbrugge 
 						</p>
 					</div>
 				</section>
@@ -109,7 +111,7 @@
 		<script type="module" src="./src/init.js"></script>
 		<script src="./src/animate-text.js"></script>
 		<script src="./src/render-issues.js"></script>
-		<script src="./src/render-repos.js"></script>
+
 		<script src="./src/render-projects.js"></script>
 	</body>
 </html>

@@ -1,4 +1,5 @@
-'use strict';
+"use strict";
 
+import { renderRepositories } from "./render-repositories.js";
 
-console.log('hello');
+renderRepositories();
