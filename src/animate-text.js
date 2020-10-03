@@ -1,15 +1,16 @@
+"use strict";
 let getH2 = document.getElementById("fill-auto");
 
 let color = {
 	ele: {
-		r: 77,
+		r: 177,
 		g: 137,
-		b: 2,
+		b: 1,
 	},
 	setEle: function () {
 		this.ele.r = (this.ele.r + Math.random() * 255) % 255;
 		this.ele.g = (this.ele.g + Math.random() * 255) % 255;
-		this.ele.b = (this.ele.b + Math.random() * 5) % 255;
+		//this.ele.b = (this.ele.b + Math.random() * 5) % 255;
 	},
 	setBack: function () {
 		this.setEle();
@@ -17,7 +18,7 @@ let color = {
 	},
 };
 
-let textCont = "Web Developers make everything accessible from home! ";
+let textCont = "Web Developers make everything accessible from anywhere! ";
 let arrText = textCont.split("");
 
 let i = 0;
@@ -36,6 +37,27 @@ function run() {
 
 let aaaa = setTimeout(run, 1000);
 
+/***
+ * Show all
+ *
+ */
+
+let showAll = false;
+const allContainer = document.getElementById("github-works");
+const showAllBtn = document.getElementById("show-all");
+function showAllHandler() {
+	showAll = !showAll;
+	if (showAll) {
+		allContainer.style =
+			"display: grid;" +
+			"grid-template-columns: auto auto auto;" +
+			"justify-content: space-around;" +
+			"text-align: center;";
+	} else {
+		allContainer.style = "display: none;";
+	}
+}
+showAllBtn.onclick = showAllHandler;
 /**
  * Footer ------> display content or does not
  */
