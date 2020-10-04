@@ -48,11 +48,25 @@ const showAllBtn = document.getElementById("show-all");
 function showAllHandler() {
 	showAll = !showAll;
 	if (showAll) {
-		allContainer.style =
-			"display: grid;" +
-			"grid-template-columns: auto auto auto;" +
-			"justify-content: space-around;" +
-			"text-align: center;";
+		if (screen.width < 784 && screen.width > 560) {
+			allContainer.style =
+				"display: grid;" +
+				"grid-template-columns: auto auto;" +
+				"justify-content: space-around;" +
+				"text-align: center;";
+		} else if (screen.width < 560) {
+			allContainer.style =
+				"display: grid;" +
+				"grid-template-columns: auto;" +
+				"justify-content: space-around;" +
+				"text-align: center;";
+		} else {
+			allContainer.style =
+				"display: grid;" +
+				"grid-template-columns: auto auto auto;" +
+				"justify-content: space-around;" +
+				"text-align: center;";
+		}
 	} else {
 		allContainer.style = "display: none;";
 	}
