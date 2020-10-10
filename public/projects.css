@@ -1,7 +1,8 @@
 article.good-projects {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	justify-content: safe;
+	justify-content: space-around;
+	align-items: center;
 	width: 100%;
 }
 
@@ -47,6 +48,9 @@ section.nine {
 }
 section.ten {
 	background-image: url("./images/semantic.png");
+}
+section.eleven {
+	background-image: url("https://github.com/Sayed94h/TodoList-Practical-JS/blob/main/wireframe.PNG");
 }
 
 section.direct-project h2 {

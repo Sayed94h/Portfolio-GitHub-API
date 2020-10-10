@@ -29,6 +29,9 @@ export class displayImportandProjects {
 		if (this.name === "Development-strategy-semantic-layout") {
 			sectionEl.className = `direct-project ten`;
 		}
+		if (this.name === "TodoList-Practical-JS") {
+			sectionEl.className = `direct-project eleven`;
+		}
 		aElOne.innerHTML = "Source";
 		aElOne.href = `${this.html_url}`;
 		aElOne.target = "_blank";

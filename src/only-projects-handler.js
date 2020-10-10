@@ -31,9 +31,13 @@ const RenderImportantProjects = function () {
 					let newContainer = new displayImportandProjects(gotData[i]);
 					newContainer.renderEachRepository();
 				}
+				if (gotData[i].name === "TodoList-Practical-JS") {
+					console.log("YESSSSSS");
+					let newContainer = new displayImportandProjects(gotData[i]);
+					newContainer.renderEachRepository();
+				}
 			}
 		})
 		.catch((err) => console.error(err));
 };
-
 RenderImportantProjects();
