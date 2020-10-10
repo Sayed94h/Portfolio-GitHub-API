@@ -102,20 +102,20 @@ h2.show-only a {
 }
 section h3.repppos {
 	border-bottom: 4px #005 dashed;
-	font-size: 3vw;
+	font-size: 2.5vw;
 }
 
 section h3.indi-projects {
 	border-bottom: 4px rgb(85, 0, 74) dashed;
-	font-size: 3vw;
+	font-size: 2.5vw;
 }
 section h3.group-projects {
 	border-bottom: 4px rgb(53, 74, 168) solid;
-	font-size: 3vw;
+	font-size: 2.5vw;
 }
 section h3.issuess {
 	border-bottom: 4px rgb(11, 173, 19) solid;
-	font-size: 3vw;
+	font-size: 2.5vw;
 }
 section#text-anim h2 {
 	text-align: center;
@@ -175,7 +175,7 @@ footer p {
 
 footer p.last-p {
 	padding-bottom: 3%;
-	font-size: 3vw;
+	font-size: 2vw;
 }
 
 footer h3#contacts,
@@ -187,7 +187,7 @@ div#where * {
 footer h3#contacts,
 footer h3#find-me {
 	text-shadow: 2px 2px 2px rgb(136, 133, 133);
-	font-size: 3vw;
+	font-size: 2vw;
 }
 
 p span.big-text {
