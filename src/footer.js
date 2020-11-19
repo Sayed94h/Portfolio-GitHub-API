@@ -9,6 +9,7 @@ let divWhere = document.getElementById("where");
 let displ = false;
 let displ111 = false;
 function displayDivWhere() {
+	divVia.style.display = "none";
 	displ = !displ;
 	if (displ) {
 		divWhere.style.display = "contents";
@@ -18,6 +19,7 @@ function displayDivWhere() {
 }
 
 function displayDivVia() {
+	divWhere.style.display = "none";
 	displ111 = !displ111;
 	if (displ111) {
 		divVia.style.display = "contents";
