@@ -51,20 +51,20 @@ function showAllHandler() {
 		if (screen.width < 784 && screen.width > 560) {
 			allContainer.style =
 				"display: grid;" +
-				"grid-template-columns: auto auto;" +
-				"justify-content: space-around;" +
+				"grid-template-columns: auto;" +
+				"justify-content: center;" +
 				"text-align: center;";
 		} else if (screen.width < 560) {
 			allContainer.style =
 				"display: grid;" +
 				"grid-template-columns: auto;" +
-				"justify-content: space-around;" +
+				"justify-content: center;" +
 				"text-align: center;";
 		} else {
 			allContainer.style =
 				"display: grid;" +
-				"grid-template-columns: auto auto auto;" +
-				"justify-content: space-around;" +
+				"grid-template-columns: auto;" +
+				"justify-content: center;" +
 				"text-align: center;";
 		}
 	} else {
@@ -72,33 +72,3 @@ function showAllHandler() {
 	}
 }
 showAllBtn.onclick = showAllHandler;
-/**
- * Footer ------> display content or does not
- */
-
-let h3Contact = document.getElementById("contacts");
-let h3FindMe = document.getElementById("find-me");
-let divVia = document.getElementById("via");
-let divWhere = document.getElementById("where");
-let displ = false;
-let displ111 = false;
-function displayDivWhere() {
-	displ = !displ;
-	if (displ) {
-		divWhere.style.display = "contents";
-	} else {
-		divWhere.style.display = "none";
-	}
-}
-
-function displayDivVia() {
-	displ111 = !displ111;
-	if (displ111) {
-		divVia.style.display = "contents";
-	} else {
-		divVia.style.display = "none";
-	}
-}
-
-h3Contact.onclick = displayDivVia;
-h3FindMe.onclick = displayDivWhere;

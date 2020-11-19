@@ -20,45 +20,31 @@ header#main-header img {
 	width: 40%;
 	border-radius: 8rem;
 }
-h1.long-hdr {
-	width: 100%;
+p.long-hdr {
 	margin-left: 15%;
-	padding-bottom: 2%;
-	padding-top: 8%;
+	width: 100%;
 }
-nav.feedback-link {
+nav.main-navigation {
 	position: absolute;
 	top: 30px;
 	display: flex;
 	justify-content: space-around;
 	left: 10%;
-	box-shadow: 4px 4px 4px 4px #999;
+	box-shadow: 4px 2px 4px 4px rgb(79, 73, 158);
 	width: 85%;
 	background-color: black;
-	height: 40px;
+	height: 30px;
 	align-content: center;
+	align-items: center;
 }
-nav.home-link {
-	position: absolute;
-	top: 30px;
-	display: flex;
-	justify-content: space-around;
-	left: 10%;
-	box-shadow: 4px 4px 4px 4px #999;
-	width: 15%;
-	background-color: black;
-	height: 40px;
-	align-content: center;
-}
-nav.feedback-link a,
-nav.projects-link a,
-nav.home-link a {
+
+nav.main-navigation a {
 	text-decoration: none;
 	color: #fff;
 	font-weight: bold;
 	text-align: center;
-	font-size: 3vw;
-	text-shadow: 3px 3px 3px rgb(212, 193, 18);
+	font-size: 15px;
+	text-shadow: 4px 4px 2px rgb(121, 212, 18);
 }
 
 section#showcase {
@@ -128,6 +114,8 @@ nav#link-container,
 nav#issue-container,
 nav#projects-container {
 	text-align: left;
+	width: 100%;
+	padding: 3%;
 	height: 300px;
 	overflow-y: scroll;
 }
@@ -143,8 +131,9 @@ section#text-anim {
 		feedback page
 */
 section#feedback-form {
-	margin-left: 30%;
-	width: 50%;
+	margin-top: 15%;
+	margin-left: 10%;
+	width: 80%;
 }
 
 section.all-only {
@@ -187,7 +176,7 @@ div#where * {
 footer h3#contacts,
 footer h3#find-me {
 	text-shadow: 2px 2px 2px rgb(136, 133, 133);
-	font-size: 2vw;
+	font-size: 15px;
 }
 
 p span.big-text {
@@ -211,50 +200,54 @@ div#where a {
 }
 
 @media screen and (max-width: 490px) {
+	header#main-header {
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: space-around;
+		align-items: center;
+	}
 	header#main-header img {
 		border: 2px solid rgb(44, 228, 7);
-		margin-top: 5%;
-		margin-left: 7%;
-		width: 60%;
+		margin-left: 2vw;
+		width: 80%;
 		border-radius: 8vw;
 	}
-	h1.long-hdr {
+	p.long-hdr {
 		width: 90%;
 		margin-left: 8%;
-		padding-bottom: 2%;
-		padding-top: 8%;
-		font-size: 3.5vw;
-		padding-right: 15%;
+		font-size: 18px;
 	}
-	nav.feedback-link {
+	nav.main-navigation {
 		position: absolute;
-		top: 30px;
+		top: 20px;
 		display: flex;
 		justify-content: space-around;
-		left: 1.2%;
-		box-shadow: 2px 2px 2px 2px #999;
-		width: 85%;
+		left: 0.1%;
+		box-shadow: 2px 2px 2px 2px rgb(79, 73, 158);
+		width: 100%;
 		background-color: black;
 		height: 20px;
 		align-content: center;
-	}
-	nav.home-link {
-		position: absolute;
-		top: 30px;
-		display: flex;
-		justify-content: space-around;
-		left: 10%;
-		box-shadow: 2px 2px 2px 2px #999;
-		width: 15%;
-		background-color: black;
-		height: 20px;
-		align-content: center;
+		align-items: center;
 	}
 
+	nav.main-navigation a {
+		text-decoration: none;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		font-size: 9px;
+		text-shadow: 2px 2px 2px rgb(121, 212, 18);
+	}
 	section#feedback-form {
-		margin-top: 15%;
-		margin-left: 10%;
-		width: 90%;
+		margin-top: 25%;
+		margin-left: 1%;
+		width: 100%;
+	}
+}
+	section h3.repppos {
+		border-bottom: 4px #005 dashed;
+		font-size: 18px;
 	}
 	section#text-anim {
 		background: url("./clooud.png");
@@ -270,5 +263,10 @@ div#where a {
 		padding-bottom: 3%;
 		font-size: 8vw;
 		text-shadow: 2px 2px 2px rgb(255, 255, 255);
+	}
+	/* Footer */
+	div#where *,
+	div#via * {
+		font-size: 10px;
 	}
 }
