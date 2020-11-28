@@ -1,3 +1,33 @@
+header#main-header {
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: rgb(6, 6, 51);
+	color: #fff;
+	padding-bottom: 11px;
+}
+
+header#main-header img {
+	margin-top: 88px;
+	width: 15%;
+	margin-right: 15px;
+	border-radius: 50%;
+	border: 1px solid greenyellow;
+}
+
+header#main-header p {
+	margin-left: 29px;
+	padding-left: 7px;
+	padding-right: 7px;
+	font-size: 23px;
+}
+main#main-projects {
+	margin-top: 310px;
+}
 article.good-projects {
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -82,7 +112,8 @@ h3.long-hdr-about {
 main#main-about article.main-article {
 	width: 86%;
 	background: #fff;
-	margin-left: 7%;
+	margin-left: 4%;
+	margin-top: 250px;
 	padding-bottom: 10%;
 }
 main#main-about article.main-article header {
@@ -92,20 +123,50 @@ main#main-about article.main-article header {
 	align-items: center;
 }
 main#main-about article.main-article header img {
-	width: 50%;
+	width: 30%;
 	border-radius: 12vw;
 	margin-left: 30%;
 }
-main#main-about article.main-article header h3 {
+main#main-about article.main-article h3 {
+	padding: 11px;
 	margin-left: 5%;
 	font-size: 2vw;
-	width: 100%;
+	width: 90%;
+	color: blue;
 }
 main#main-about article.main-article section.contents {
 	margin-left: 5%;
 }
 
 @media screen and (max-width: 490px) {
+	/* style for the page projects */
+
+	header#main-header {
+		position: absolute;
+		top: 0;
+		display: flex;
+		flex-direction: row;
+
+		margin-bottom: 100px;
+		width: 100%;
+		background-color: rgb(6, 6, 51);
+		color: #fff;
+	}
+
+	header#main-header img {
+		margin-top: 58px;
+		width: 35%;
+		border-radius: 50%;
+	}
+
+	header#main-header p {
+		margin-top: 58px;
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+	main#main-projects {
+		margin-top: 180px;
+	}
 	section.direct-project {
 		display: grid;
 		grid-template-columns: auto auto;
@@ -121,16 +182,43 @@ main#main-about article.main-article section.contents {
 		width: 290px;
 		height: 290px;
 	}
-	main#main-about article.main-article header img {
-		width: 110%;
-		border-radius: 12vw;
-		margin-right: 2%;
-		margin-left: 10%;
+	h3.long-hdr-about {
+		text-align: center;
+		padding-bottom: 2%;
+		padding-top: 9%;
 	}
-	main#main-about article.main-article header h3 {
+
+	main#main-about article.main-article {
+		width: 89vw;
+		background: #fff;
+		margin-left: 4%;
+		margin-top: 70px;
+		padding-top: 18px;
+		padding-bottom: 10%;
+	}
+	main#main-about article.main-article header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 80vw;
+	}
+	main#main-about article.main-article header ul {
+		margin: 11vw;
+		padding: 0;
+	}
+	main#main-about article.main-article header img {
+		border-radius: 50%;
+		margin: 0;
+		padding: 0;
+		width: 30vw;
+	}
+	main#main-about article.main-article h3 {
 		margin-left: 5%;
-		font-size: 15px;
-		width: 100%;
+		font-size: 13px;
+		width: 90%;
+	}
+	main#main-about article.main-article section.contents {
+		margin-left: 5%;
 	}
 }
 
