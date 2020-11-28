@@ -18,7 +18,7 @@ let color = {
 	},
 };
 
-let textCont = "Web Developers make everything accessible from anywhere! ";
+let textCont = "Web Developers make everything accessible from anywhere!      ";
 let arrText = textCont.split("");
 
 let i = 0;
@@ -35,10 +35,10 @@ function run() {
 	}, 300);
 }
 
-let aaaa = setTimeout(run, 1000);
+let aaaa = setTimeout(run, 800);
 
 /***
- * Show all
+ * Show all github works contents by clicking the  "All Works" button
  *
  */
 
@@ -51,20 +51,20 @@ function showAllHandler() {
 		if (screen.width < 784 && screen.width > 560) {
 			allContainer.style =
 				"display: grid;" +
-				"grid-template-columns: auto;" +
-				"justify-content: center;" +
+				"grid-template-columns: auto auto auto;" +
+				"justify-content: space-around;" +
 				"text-align: center;";
 		} else if (screen.width < 560) {
 			allContainer.style =
 				"display: grid;" +
 				"grid-template-columns: auto;" +
-				"justify-content: center;" +
+				"justify-content: space-around;" +
 				"text-align: center;";
 		} else {
 			allContainer.style =
 				"display: grid;" +
-				"grid-template-columns: auto;" +
-				"justify-content: center;" +
+				"grid-template-columns: auto auto auto;" +
+				"justify-content: space-around;" +
 				"text-align: center;";
 		}
 	} else {

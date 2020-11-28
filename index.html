@@ -4,22 +4,24 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>GitHub API</title>
+	<title>Welcome | HOME</title>
 
 	<link href="./public/style.css" rel="stylesheet" />
 </head>
 
 <body>
 	<!--	main header	-->
-	<header id="main-header">
+	<header id="main-header-index">
+		<section class="header-content-wrapper">
+			<p class="long-hdr">
+				I am Sayed Kazimi a junior web developer willing to become an expert software developer,
+				software designer, web application developer and designer.
+				Happy to see you on this page.
+			</p>
+			<img src="https://user-images.githubusercontent.com/61209285/92802034-71f99180-f3b6-11ea-8f19-59fab1c284d4.jpg"
+				alt="my profile picture">
+		</section>
 
-		<p class="long-hdr">
-			I am Sayed Kazimi a junior web developer willing to become an expert software developer,
-			software designer, web application developer and designer.
-			Happy to see you on this page.
-		</p>
-		<img src="https://user-images.githubusercontent.com/61209285/92802034-71f99180-f3b6-11ea-8f19-59fab1c284d4.jpg"
-			alt="my profile picture">
 	</header>
 	<nav class="main-navigation">
 		<a href="./public/feedback.html">FEEDBACK</a>
@@ -27,13 +29,20 @@
 		<a href="./public/about.html">ABOUT</a>
 		<a href="#contacts">CONTACTS</a>
 	</nav>
-	<section id="showcase"></section>
+	<section id="showcase">
+		<section class="showcase-text">
+			<h1>
+				It is all about <br> connections and relationships
+			</h1>
+		</section>
+	</section>
 	<main id="user-interface">
-		<h2 class="sec-hdr">Look at my work on Github</h2>
+		<h2 class="sec-hdr">Check out my works on Github</h2>
 		<section class="all-only">
 			<h2 id="show-all">All Works<h2>
-					<h2 class="show-only"><a href="./public/projects.html">Only Projects</a></h2>
-
+					<h2 class="show-only">
+						<a href="./public/projects.html">Only Projects</a>
+					</h2>
 		</section>
 
 		<article id="github-works">
@@ -51,11 +60,11 @@
 					</nav>
 				</section> -->
 			<!--  section two projects  on which I collaborated NOTE: because of limitation in api request I am going to comment out this part-->
-			<!-- 				<section>
-					<h3 class="group-projects">Projects</h3>
+			<section>
+				<h3 class="group-projects">Projects</h3>
 
-					<nav id="projects-container"></nav>
-				</section> -->
+				<nav id="projects-container"></nav>
+			</section>
 
 			<!--  section three my repos  -->
 			<section>
@@ -64,10 +73,10 @@
 				<nav id="link-container"></nav>
 			</section>
 			<!--  section four my issues  NOTE: because of limitation in api request I am going to comment out this part-->
-			<!-- 				<section>
-					<h3 class="issuess">Issues</h3>
-					<nav id="issue-container"></nav>
-				</section> -->
+			<section>
+				<h3 class="issuess">Issues</h3>
+				<nav id="issue-container"></nav>
+			</section>
 			<!--	section five is feedback form	-->
 		</article>
 		<section id="text-anim">
@@ -107,6 +116,10 @@
 
 	<!-- load your app -->
 	<script type="module" src="./src/init.js"></script>
+
+	<script src="./src/render-issues.js"></script>
+
+	<script src="./src/render-projects.js"></script>
 	<script src="./src/animate-text.js"></script>
 	<script src="./src/footer.js"></script>
 
