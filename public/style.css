@@ -48,7 +48,10 @@ nav.main-navigation {
 	align-content: center;
 	align-items: center;
 }
-
+section.note {
+	color: red;
+	text-align: center;
+}
 nav.main-navigation a {
 	text-decoration: none;
 	color: #fff;
